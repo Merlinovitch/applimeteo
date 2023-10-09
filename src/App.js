@@ -1,10 +1,12 @@
+import FetchData from './Components/FetchData'
+import CardToday from './Components/CardToday'
 
 import React from 'react'
 
-const App = () => {
+function App() {
   return (
-    <div className='text-3xl text-red-500'>App</div>
-  )
+ < CardToday />,
+ < FetchData />)
 }
 
 export default App
