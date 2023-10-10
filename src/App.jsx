@@ -1,9 +1,17 @@
-
+import Prevision from './components/Prevision'
+import MeteoJour from './components/MeteoJour'
 import './App.css';
 
 function App() {
 
-    return <h1 className = "bg-red-600"> test </h1>;
+    return(
+
+        <div className='container'>
+            <MeteoJour> </MeteoJour>
+            <Prevision> </Prevision>
+            
+        </div>
+    )
  
 }
 
