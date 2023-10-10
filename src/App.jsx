@@ -14,7 +14,7 @@ function App() {
       meteoApi(setMeteo, setLoading)
     }, [])
     if (isLoading) {
-      return (<div className='cont'>Loading</div>);
+      return (<div className='cont'>Loading...</div>);
     }
   
 

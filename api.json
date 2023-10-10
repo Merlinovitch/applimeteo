@@ -1,7 +1,7 @@
 {
     "latitude": 50.7,
     "longitude": 3.1799998,
-    "generationtime_ms": 0.3401041030883789,
+    "generationtime_ms": 0.5190372467041016,
     "utc_offset_seconds": 7200,
     "timezone": "Europe/Paris",
     "timezone_abbreviation": "CEST",
@@ -13,20 +13,24 @@
         "relativehumidity_2m": "%",
         "apparent_temperature": "°C",
         "is_day": "",
+        "precipitation": "mm",
+        "rain": "mm",
         "weathercode": "wmo code",
         "cloudcover": "%",
         "windspeed_10m": "km/h"
     },
     "current": {
-        "time": "2023-10-10T10:00",
+        "time": "2023-10-10T14:45",
         "interval": 900,
-        "temperature_2m": 15.6,
-        "relativehumidity_2m": 74,
-        "apparent_temperature": 14.6,
+        "temperature_2m": 24.2,
+        "relativehumidity_2m": 41,
+        "apparent_temperature": 22.4,
         "is_day": 1,
+        "precipitation": 0.00,
+        "rain": 0.00,
         "weathercode": 3,
-        "cloudcover": 100,
-        "windspeed_10m": 9.2
+        "cloudcover": 99,
+        "windspeed_10m": 12.7
     },
     "daily_units": {
         "time": "iso8601",
@@ -51,27 +55,27 @@
             3,
             3,
             80,
-            80,
             61,
+            80,
             2,
             45
         ],
         "temperature_2m_max": [
-            25.1,
-            23.9,
-            18.7,
-            22.5,
-            18.3,
+            24.9,
+            24.1,
+            18.6,
+            20.3,
+            16.8,
             12.2,
             13.2
         ],
         "temperature_2m_min": [
             13.4,
-            13.5,
-            15.7,
-            17.0,
-            7.7,
-            5.8,
+            13.4,
+            15.9,
+            17.2,
+            7.4,
+            4.9,
             1.9
         ],
         "sunrise": [
@@ -93,11 +97,11 @@
             "2023-10-16T18:54"
         ],
         "windspeed_10m_max": [
-            14.9,
-            19.0,
-            14.8,
-            24.7,
-            22.9,
+            15.1,
+            17.4,
+            17.1,
+            27.1,
+            20.0,
             16.1,
             8.3
         ]

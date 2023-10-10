@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { meteoJour } from '../functions/functions'
 import Prevision from './Prevision'
+import { formatDay } from '../functions/dateformat'
 
 function MeteoJour(props){
   return (
@@ -8,6 +9,9 @@ function MeteoJour(props){
         <div className="top">
           <div className="location">
             <p>Roubaix</p>
+          </div>
+          <div className="date">
+            <h3>{props.meteo.current.time}</h3>
           </div>
           <div className='contTemp'>
           <div className='temp'>
@@ -19,6 +23,20 @@ function MeteoJour(props){
           </div>
         </div>
         <div className="bottom">
+          <div className='contPremValeurs'>
+            <div className='soleil'>
+              <p className='bold'>🌅</p>
+              <p className='nomsIndi'>{dayFormat.format(props.meteo.daily.sunrise[1]}</p>
+              <p className='bold'>🌇</p>
+              <p className='nomsIndi'>{props.meteo.daily.sunset[1]}</p>
+            </div>
+            <div className='pluie'>
+              <p className='bold'>☔</p>
+              <p className='nomsIndi'>{props.meteo.current.rain}</p>
+            </div>
+
+          </div>
+          <div className='contSecValeurs'>
           <div className='resenti'>
             <p className='bold'>{props.meteo.current.apparent_temperature}{props.meteo.current_units.apparent_temperature}</p>
             <p className='nomsIndi'>Ressenti</p>
@@ -30,6 +48,7 @@ function MeteoJour(props){
           <div className='vent'>
             <p className='bold'>{props.meteo.current.windspeed_10m}{props.meteo.current_units.windspeed_10m}</p>
             <p className='nomsIndi'>Vent</p>
+          </div>
           </div>
         </div>
       </div>
