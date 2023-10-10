@@ -26,3 +26,5 @@ export const weatherCodeEmoji = {
     86: '🌨️',
 } ;
 export const TEMP = '🌡️';
+export const sunRise = '🌅';
+export const sunSet ='🌇';

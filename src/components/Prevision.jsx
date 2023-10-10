@@ -15,7 +15,7 @@ const Prevision = (props) => {
           <p>{props.weatherCode}</p>
         </div>
         <div className='tempJour'>
-          <p>{props.tempMax}</p>
+          <p>{props.tempMax}°C</p>
         </div>
       </div>
 

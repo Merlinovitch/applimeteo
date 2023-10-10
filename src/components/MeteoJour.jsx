@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import { meteoJour } from '../functions/functions'
 import Prevision from './Prevision'
-import { formatDay } from '../functions/dateformat'
+import formatTime from '../functions/hourformat'
+
+
 
 function MeteoJour(props){
   return (
@@ -26,9 +28,9 @@ function MeteoJour(props){
           <div className='contPremValeurs'>
             <div className='soleil'>
               <p className='bold'>🌅</p>
-              <p className='nomsIndi'>{dayFormat.format(props.meteo.daily.sunrise[1]}</p>
+              <p className='nomsIndi'>{formatTime(props.meteo.daily.sunrise[1])}</p>
               <p className='bold'>🌇</p>
-              <p className='nomsIndi'>{props.meteo.daily.sunset[1]}</p>
+              <p className='nomsIndi'>{formatTime(props.meteo.daily.sunset[1])}</p>
             </div>
             <div className='pluie'>
               <p className='bold'>☔</p>
