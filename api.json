@@ -1,81 +1,105 @@
 {
     "latitude": 50.7,
     "longitude": 3.1799998,
-    "generationtime_ms": 0.23698806762695312,
-    "utc_offset_seconds": 3600,
-    "timezone": "Europe/London",
-    "timezone_abbreviation": "BST",
+    "generationtime_ms": 0.3401041030883789,
+    "utc_offset_seconds": 7200,
+    "timezone": "Europe/Paris",
+    "timezone_abbreviation": "CEST",
     "elevation": 37.0,
-    "current_weather_units": {
+    "current_units": {
         "time": "iso8601",
         "interval": "seconds",
-        "temperature": "°C",
-        "windspeed": "km/h",
-        "winddirection": "°",
+        "temperature_2m": "°C",
+        "relativehumidity_2m": "%",
+        "apparent_temperature": "°C",
         "is_day": "",
-        "weathercode": "wmo code"
+        "weathercode": "wmo code",
+        "cloudcover": "%",
+        "windspeed_10m": "km/h"
     },
-    "current_weather": {
-        "time": "2023-10-09T15:45",
+    "current": {
+        "time": "2023-10-10T10:00",
         "interval": 900,
-        "temperature": 21.6,
-        "windspeed": 7.6,
-        "winddirection": 278,
+        "temperature_2m": 15.6,
+        "relativehumidity_2m": 74,
+        "apparent_temperature": 14.6,
         "is_day": 1,
-        "weathercode": 61
+        "weathercode": 3,
+        "cloudcover": 100,
+        "windspeed_10m": 9.2
     },
     "daily_units": {
         "time": "iso8601",
+        "weathercode": "wmo code",
         "temperature_2m_max": "°C",
         "temperature_2m_min": "°C",
-        "precipitation_sum": "mm",
-        "precipitation_probability_max": "%"
+        "sunrise": "iso8601",
+        "sunset": "iso8601",
+        "windspeed_10m_max": "km/h"
     },
     "daily": {
         "time": [
-            "2023-10-09",
             "2023-10-10",
             "2023-10-11",
             "2023-10-12",
             "2023-10-13",
             "2023-10-14",
-            "2023-10-15"
+            "2023-10-15",
+            "2023-10-16"
+        ],
+        "weathercode": [
+            3,
+            3,
+            80,
+            80,
+            61,
+            2,
+            45
         ],
         "temperature_2m_max": [
-            21.9,
-            24.6,
-            22.6,
-            18.5,
+            25.1,
+            23.9,
+            18.7,
             22.5,
-            16.4,
-            14.2
+            18.3,
+            12.2,
+            13.2
         ],
         "temperature_2m_min": [
-            14.0,
-            13.3,
-            14.0,
-            15.7,
+            13.4,
             13.5,
-            7.8,
+            15.7,
+            17.0,
+            7.7,
+            5.8,
+            1.9
+        ],
+        "sunrise": [
+            "2023-10-10T08:01",
+            "2023-10-11T08:03",
+            "2023-10-12T08:04",
+            "2023-10-13T08:06",
+            "2023-10-14T08:08",
+            "2023-10-15T08:09",
+            "2023-10-16T08:11"
+        ],
+        "sunset": [
+            "2023-10-10T19:07",
+            "2023-10-11T19:04",
+            "2023-10-12T19:02",
+            "2023-10-13T19:00",
+            "2023-10-14T18:58",
+            "2023-10-15T18:56",
+            "2023-10-16T18:54"
+        ],
+        "windspeed_10m_max": [
+            14.9,
+            19.0,
+            14.8,
+            24.7,
+            22.9,
+            16.1,
             8.3
-        ],
-        "precipitation_sum": [
-            0.10,
-            0.00,
-            0.00,
-            2.50,
-            9.60,
-            0.00,
-            0.00
-        ],
-        "precipitation_probability_max": [
-            0,
-            0,
-            35,
-            52,
-            21,
-            71,
-            19
         ]
     }
 }

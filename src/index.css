@@ -1,10 +1,100 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-.container{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
     max-width: 80%;
     height: 100vh;
     margin: 0 auto;
     padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
+h1{
+    font-size: 3rem;
+  }
+  
+  .bold {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .bottom .nomsIndi{
+    font-size: .8rem;
+  }
+body {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contJour {
+    background-color: rgba(255, 255, 255, 0.373);
+    top: 2rem;
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.contJour .top{
+    width: 100%;
+    margin: 1rem auto;
+    padding-top: 2rem;
+    
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  .contJour .descrip{
+    position: relative;
+    
+  }
+  
+  .contJour .bottom{
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    color:rgb(4, 51, 92);
+    background-color: rgba(99, 172, 209, 0.421);
+  }
+  .contTemp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .prevJours{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cardJour {
+    border: 1px solid black;
+  }
