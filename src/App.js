@@ -1,20 +1,12 @@
-import Data from './components/FetchData'
-import React from 'react'
+import React from "react";
+import GetWeather from "./components/Weather";
+
+
 
 function App() {
-
-  const handleOnSearchChange = (searchData) => {
-    console.log(searchData)
-    
-  }
-
-
   return (
-    <div className='container'>
-    < Data />
-  
-    </div>
+  <GetWeather />
   )
-  }
+}
 
-export default App
+export default App;
