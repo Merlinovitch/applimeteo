@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import { meteoJour } from '../functions/functions'
-import Prevision from './Prevision'
 import formatTime from '../functions/hourformat'
+import  WeatherDisplay from '../functions/emojis'
 
 
 
